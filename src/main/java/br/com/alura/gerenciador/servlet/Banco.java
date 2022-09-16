@@ -13,8 +13,6 @@ import java.util.List;
  */
 public class Banco {
     
-    
-     
     private static final List<Empresa> lista = new ArrayList<>();
     
     public void adiciona(Empresa empresa){
@@ -24,18 +22,4 @@ public class Banco {
     public List<Empresa> getEmpresas(){
         return Banco.lista;
 }
-    
-    static{
-    Empresa empresa1 = new Empresa();
-    Empresa empresa2 = new Empresa();
-    
-    empresa1.setId(1);
-    empresa1.setNome("alura");
-    empresa2.setId(2);
-    empresa2.setNome("caelum");
-    lista.add(empresa1);
-    lista.add(empresa2);
-    
-    }
-    
 }
